@@ -31,6 +31,10 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 `;
 
 const Video = styled.video`
@@ -76,7 +80,7 @@ const UserCounter = styled.span`
 `;
 
 const Button = styled.button`
-  background-color: #79fe7e;
+  background-color: #2caf2a;
   border: 0px;
   border-radius: 8px;
   color: white;
@@ -85,7 +89,7 @@ const Button = styled.button`
   height: 60px;
   width: 30%;
   :hover {
-    background-color: #2caf2a;
+    background-color: #79fe7e;
     cursor: pointer;
   }
 `;
