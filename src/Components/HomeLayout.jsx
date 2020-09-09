@@ -80,8 +80,8 @@ const UserCounter = styled.span`
 `;
 
 const Button = styled.button`
-  background-color: #2caf2a;
-  border: 0px;
+  background: transparent;
+  border: 4px solid white;
   border-radius: 8px;
   color: white;
   font-size: 25px;
@@ -89,7 +89,7 @@ const Button = styled.button`
   height: 60px;
   width: 30%;
   :hover {
-    background-color: #79fe7e;
+    border-color: #79fe7e;
     cursor: pointer;
   }
 `;
