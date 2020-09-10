@@ -5,14 +5,13 @@ const HomeLayout = ({ handleButtonClick }) => {
   return (
     <Container>
       <Video autoPlay muted loop>
-        <source src="/London_street_Time_lapse.mp4" type="video/mp4" />
+        <source src="/Site-web/London_street_Time_lapse.mp4" type="video/mp4" />
       </Video>
       <Background></Background>
       <Content>
         <Header>Super Finance</Header>
         <Description>
-          당신만을 위한 주식 서비스
-          <br /> Super Finance입니다.
+          당신만을 위한 주식 서비스 Super Finance입니다.
         </Description>
         <UserCounter>현재 54738명이 이용중입니다.</UserCounter>
         <Button type="button" onClick={handleButtonClick}>
@@ -27,7 +26,7 @@ const HomeLayout = ({ handleButtonClick }) => {
 const Container = styled.div`
   position: relative;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,28 +54,29 @@ const Background = styled.div`
 `;
 
 const Content = styled.div`
-  align-items: center;
   color: white;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  height: 50%;
   justify-content: space-around;
-  position: absolute;
-  width: 100%;
+  align-items: center;
+  height: 50%;
 `;
 
 const Header = styled.h1`
   color: #79fe7e;
   font-family: Megrim;
-  font-size: 80px;
+  font-size: 9rem;
 `;
 
-const Description = styled.pre`
-  font-size: 60px;
+const Description = styled.div`
+  font-size: 5rem;
+  word-break: break-all;
+  width: 55rem;
 `;
 
 const UserCounter = styled.span`
-  font-size: 24px;
+  font-size: 2.4rem;
 `;
 
 const Button = styled.button`
@@ -84,10 +84,10 @@ const Button = styled.button`
   border: 4px solid white;
   border-radius: 8px;
   color: white;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 700;
-  height: 60px;
-  width: 30%;
+  height: 5rem;
+  width: 60%;
   :hover {
     border-color: #79fe7e;
     cursor: pointer;
@@ -98,6 +98,7 @@ const FooterMessage = styled.div`
   position: fixed;
   color: white;
   bottom: 3%;
+  font-size: 1.6rem;
 `;
 
 export default HomeLayout;
